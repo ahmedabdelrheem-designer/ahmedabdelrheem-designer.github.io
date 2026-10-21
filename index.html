@@ -300,6 +300,21 @@ html{scroll-behavior:smooth;scroll-padding-top:24px}#social-links{scroll-margin-
 @media(max-width:900px){.profilegrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.profilegrid{grid-template-columns:1fr}.profilecard{padding:14px}.floating-actions{right:12px;bottom:14px}.float-btn{width:44px;height:44px}}
 
+
+/* Store gallery and store links are intentionally separate. */
+.store-subheading{margin:1.5rem 0 .85rem;font-size:1.05rem;font-weight:700;letter-spacing:-.02em}
+.store-image-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:1rem}
+.store-image-grid .storecard{min-width:0}
+.store-image-grid .storepreview{display:block;overflow:hidden;border-radius:14px;cursor:default}
+.store-image-grid .storepreview img{display:block;width:100%;height:220px;object-fit:cover;transition:transform .25s ease}
+.store-image-grid .storepreview:hover img{transform:scale(1.025)}
+.store-links-block{margin-top:1.5rem}
+.store-link-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:.65rem}
+.store-link-list li{min-width:0}
+.store-link-list .storevisit{display:flex;align-items:center;justify-content:space-between;gap:.8rem;padding:.85rem 1rem;border:1px solid var(--line,rgba(120,120,120,.25));border-radius:12px;text-decoration:none}
+.store-link-list .storevisit:hover{transform:translateY(-1px)}
+@media(max-width:600px){.store-image-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem}.store-image-grid .storepreview img{height:155px}.store-link-list{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body lang="en" dir="ltr">
@@ -364,126 +379,42 @@ html{scroll-behavior:smooth;scroll-padding-top:24px}#social-links{scroll-margin-
   <div class="sectionhead">
     <div>
       <div class="eyebrow" data-i="storesEyebrow">E-commerce design</div>
-      <h2 data-i="storesTitle">Online Stores — Salla & Zid</h2>
+      <h2 data-i="storesTitle">Online Stores — Salla &amp; Zid</h2>
     </div>
   </div>
   <p class="storeintro" data-i="storesIntro">I design and improve e-commerce stores through polished banners and graphics, custom CSS, clearer homepages, and a consistent visual identity. I can also review competitors and research their SEO keywords to help strengthen your store’s search visibility and shopping experience.</p>
-  <div class="storegrid">
-    <article class="storecard">
-      <a class="storepreview" href="https://naseem4care.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit naseem4care.com">
-        <img src="store-01.jpg" alt="Full-page preview of the naseem4care.com online store" loading="lazy" decoding="async">
-      </a>
-      <div class="storeinfo">
-        <span class="storetag" data-i="storeTag">E-commerce Store</span>
-        <h3>naseem4care.com</h3>
-        <p data-i="storeCardDesc">Storefront design, visual merchandising, and organized product presentation.</p>
-        <a class="storevisit" href="https://naseem4care.com/" target="_blank" rel="noopener noreferrer"><span data-i="storeVisit">Visit Store ↗</span></a>
-      </div>
-    </article>
-    <article class="storecard">
-      <a class="storepreview" href="https://sflower.sa/" target="_blank" rel="noopener noreferrer" aria-label="Visit sflower.sa">
-        <img src="store-02.jpg" alt="Full-page preview of the sflower.sa online store" loading="lazy" decoding="async">
-      </a>
-      <div class="storeinfo">
-        <span class="storetag" data-i="storeTag">E-commerce Store</span>
-        <h3>sflower.sa</h3>
-        <p data-i="storeCardDesc">Storefront design, visual merchandising, and organized product presentation.</p>
-        <a class="storevisit" href="https://sflower.sa/" target="_blank" rel="noopener noreferrer"><span data-i="storeVisit">Visit Store ↗</span></a>
-      </div>
-    </article>
-    <article class="storecard">
-      <a class="storepreview" href="https://thmart-albhar.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit thmart-albhar.com">
-        <img src="store-03.jpg" alt="Full-page preview of the thmart-albhar.com online store" loading="lazy" decoding="async">
-      </a>
-      <div class="storeinfo">
-        <span class="storetag" data-i="storeTag">E-commerce Store</span>
-        <h3>thmart-albhar.com</h3>
-        <p data-i="storeCardDesc">Storefront design, visual merchandising, and organized product presentation.</p>
-        <a class="storevisit" href="https://thmart-albhar.com/" target="_blank" rel="noopener noreferrer"><span data-i="storeVisit">Visit Store ↗</span></a>
-      </div>
-    </article>
-    <article class="storecard">
-      <a class="storepreview" href="https://danone-sa.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit danone-sa.com">
-        <img src="store-04.jpg" alt="Full-page preview of the danone-sa.com online store" loading="lazy" decoding="async">
-      </a>
-      <div class="storeinfo">
-        <span class="storetag" data-i="storeTag">E-commerce Store</span>
-        <h3>danone-sa.com</h3>
-        <p data-i="storeCardDesc">Storefront design, visual merchandising, and organized product presentation.</p>
-        <a class="storevisit" href="https://danone-sa.com/" target="_blank" rel="noopener noreferrer"><span data-i="storeVisit">Visit Store ↗</span></a>
-      </div>
-    </article>
-    <article class="storecard">
-      <a class="storepreview" href="https://sjhksa.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit sjhksa.com">
-        <img src="store-05.jpg" alt="Full-page preview of the sjhksa.com online store" loading="lazy" decoding="async">
-      </a>
-      <div class="storeinfo">
-        <span class="storetag" data-i="storeTag">E-commerce Store</span>
-        <h3>sjhksa.com</h3>
-        <p data-i="storeCardDesc">Storefront design, visual merchandising, and organized product presentation.</p>
-        <a class="storevisit" href="https://sjhksa.com/" target="_blank" rel="noopener noreferrer"><span data-i="storeVisit">Visit Store ↗</span></a>
-      </div>
-    </article>
-    <article class="storecard">
-      <a class="storepreview" href="https://alwan.shop/mm" target="_blank" rel="noopener noreferrer" aria-label="Visit alwan.shop/mm">
-        <img src="store-06.jpg" alt="Full-page preview of the alwan.shop/mm online store" loading="lazy" decoding="async">
-      </a>
-      <div class="storeinfo">
-        <span class="storetag" data-i="storeTag">E-commerce Store</span>
-        <h3>alwan.shop/mm</h3>
-        <p data-i="storeCardDesc">Storefront design, visual merchandising, and organized product presentation.</p>
-        <a class="storevisit" href="https://alwan.shop/mm" target="_blank" rel="noopener noreferrer"><span data-i="storeVisit">Visit Store ↗</span></a>
-      </div>
-    </article>
-    <article class="storecard">
-      <a class="storepreview" href="http://jnahl.com" target="_blank" rel="noopener noreferrer" aria-label="Visit jnahl.com">
-        <img src="store-07.jpg" alt="Full-page preview of the jnahl.com online store" loading="lazy" decoding="async">
-      </a>
-      <div class="storeinfo">
-        <span class="storetag" data-i="storeTag">E-commerce Store</span>
-        <h3>jnahl.com</h3>
-        <p data-i="storeCardDesc">Storefront design, visual merchandising, and organized product presentation.</p>
-        <a class="storevisit" href="http://jnahl.com" target="_blank" rel="noopener noreferrer"><span data-i="storeVisit">Visit Store ↗</span></a>
-      </div>
-    </article>
-    <article class="storecard">
-      <a class="storepreview" href="https://binhariz.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit binhariz.com">
-        <img src="store-08.jpg" alt="Full-page preview of the binhariz.com online store" loading="lazy" decoding="async">
-      </a>
-      <div class="storeinfo">
-        <span class="storetag" data-i="storeTag">E-commerce Store</span>
-        <h3>binhariz.com</h3>
-        <p data-i="storeCardDesc">Storefront design, visual merchandising, and organized product presentation.</p>
-        <a class="storevisit" href="https://binhariz.com/" target="_blank" rel="noopener noreferrer"><span data-i="storeVisit">Visit Store ↗</span></a>
-      </div>
-    </article>
-    <article class="storecard">
-      <a class="storepreview" href="https://alhayek-lighting.com/ar" target="_blank" rel="noopener noreferrer" aria-label="Visit alhayek-lighting.com">
-        <img src="store-09.jpg" alt="Full-page preview of the alhayek-lighting.com online store" loading="lazy" decoding="async">
-      </a>
-      <div class="storeinfo">
-        <span class="storetag" data-i="storeTag">E-commerce Store</span>
-        <h3>alhayek-lighting.com</h3>
-        <p data-i="storeCardDesc">Storefront design, visual merchandising, and organized product presentation.</p>
-        <a class="storevisit" href="https://alhayek-lighting.com/ar" target="_blank" rel="noopener noreferrer"><span data-i="storeVisit">Visit Store ↗</span></a>
-      </div>
-    </article>
-    <article class="storecard">
-      <a class="storepreview" href="https://salla.sa/oracha-" target="_blank" rel="noopener noreferrer" aria-label="Visit salla.sa/oracha-">
-        <img src="store-10.jpg" alt="Full-page preview of the salla.sa/oracha- online store" loading="lazy" decoding="async">
-      </a>
-      <div class="storeinfo">
-        <span class="storetag" data-i="storeTag">E-commerce Store</span>
-        <h3>salla.sa/oracha-</h3>
-        <p data-i="storeCardDesc">Storefront design, visual merchandising, and organized product presentation.</p>
-        <a class="storevisit" href="https://salla.sa/oracha-" target="_blank" rel="noopener noreferrer"><span data-i="storeVisit">Visit Store ↗</span></a>
-      </div>
-    </article>
+  <h3 class="store-subheading" data-i="storeImagesTitle">Store designs</h3>
+  <div class="storegrid store-image-grid">
+    <article class="storecard"><div class="storepreview"><img src="store-01.jpg" alt="Full-page preview of the naseem4care.com online store" loading="lazy" decoding="async"></div></article>
+    <article class="storecard"><div class="storepreview"><img src="store-02.jpg" alt="Full-page preview of the sflower.sa online store" loading="lazy" decoding="async"></div></article>
+    <article class="storecard"><div class="storepreview"><img src="store-03.jpg" alt="Full-page preview of the thmart-albhar.com online store" loading="lazy" decoding="async"></div></article>
+    <article class="storecard"><div class="storepreview"><img src="store-04.jpg" alt="Full-page preview of the danone-sa.com online store" loading="lazy" decoding="async"></div></article>
+    <article class="storecard"><div class="storepreview"><img src="store-05.jpg" alt="Full-page preview of the sjhksa.com online store" loading="lazy" decoding="async"></div></article>
+    <article class="storecard"><div class="storepreview"><img src="store-06.jpg" alt="Full-page preview of the alwan.shop/mm online store" loading="lazy" decoding="async"></div></article>
+    <article class="storecard"><div class="storepreview"><img src="store-07.jpg" alt="Full-page preview of the jnahl.com online store" loading="lazy" decoding="async"></div></article>
+    <article class="storecard"><div class="storepreview"><img src="store-08.jpg" alt="Full-page preview of the binhariz.com online store" loading="lazy" decoding="async"></div></article>
+    <article class="storecard"><div class="storepreview"><img src="store-09.jpg" alt="Full-page preview of the alhayek-lighting.com online store" loading="lazy" decoding="async"></div></article>
+    <article class="storecard"><div class="storepreview"><img src="store-10.jpg" alt="Full-page preview of the salla.sa/oracha- online store" loading="lazy" decoding="async"></div></article>
+  </div>
+  <div class="store-links-block">
+    <h3 class="store-subheading" data-i="storeLinksTitle">Store links</h3>
+    <ul class="store-link-list">
+    <li><a class="storevisit" href="https://naseem4care.com/" target="_blank" rel="noopener noreferrer">naseem4care.com <span aria-hidden="true">↗</span></a></li>
+    <li><a class="storevisit" href="https://sflower.sa/" target="_blank" rel="noopener noreferrer">sflower.sa <span aria-hidden="true">↗</span></a></li>
+    <li><a class="storevisit" href="https://thmart-albhar.com/" target="_blank" rel="noopener noreferrer">thmart-albhar.com <span aria-hidden="true">↗</span></a></li>
+    <li><a class="storevisit" href="https://danone-sa.com/" target="_blank" rel="noopener noreferrer">danone-sa.com <span aria-hidden="true">↗</span></a></li>
+    <li><a class="storevisit" href="https://sjhksa.com/" target="_blank" rel="noopener noreferrer">sjhksa.com <span aria-hidden="true">↗</span></a></li>
+    <li><a class="storevisit" href="https://alwan.shop/mm" target="_blank" rel="noopener noreferrer">alwan.shop/mm <span aria-hidden="true">↗</span></a></li>
+    <li><a class="storevisit" href="http://jnahl.com" target="_blank" rel="noopener noreferrer">jnahl.com <span aria-hidden="true">↗</span></a></li>
+    <li><a class="storevisit" href="https://binhariz.com/" target="_blank" rel="noopener noreferrer">binhariz.com <span aria-hidden="true">↗</span></a></li>
+    <li><a class="storevisit" href="https://alhayek-lighting.com/ar" target="_blank" rel="noopener noreferrer">alhayek-lighting.com <span aria-hidden="true">↗</span></a></li>
+    <li><a class="storevisit" href="https://salla.sa/oracha-" target="_blank" rel="noopener noreferrer">salla.sa/oracha- <span aria-hidden="true">↗</span></a></li>
+    </ul>
   </div>
   <div class="storecapabilities">
-    <div class="storecap"><strong data-i="storeCap1">Graphic design & banners</strong><span data-i="storeCap1d">Campaign visuals that fit your brand.</span></div>
-    <div class="storecap"><strong data-i="storeCap2">CSS & store templates</strong><span data-i="storeCap2d">Refined layouts and useful customizations.</span></div>
-    <div class="storecap"><strong data-i="storeCap3">Homepage & UX</strong><span data-i="storeCap3d">Clear navigation and easier purchasing.</span></div>
+    <div class="storecap"><strong data-i="storeCap1">Graphic design &amp; banners</strong><span data-i="storeCap1d">Campaign visuals that fit your brand.</span></div>
+    <div class="storecap"><strong data-i="storeCap2">Custom CSS</strong><span data-i="storeCap2d">A tailored storefront experience.</span></div>
+    <div class="storecap"><strong data-i="storeCap3">Homepage design</strong><span data-i="storeCap3d">Clearer navigation and product discovery.</span></div>
     <div class="storecap"><strong data-i="storeCap4">Competitor SEO analysis</strong><span data-i="storeCap4d">Research keywords and opportunities.</span></div>
   </div>
 </section>
@@ -638,6 +569,7 @@ en:{
   printName1:'Salselat Al-Wujadah — Brand Applications',printDesc1:'Stationery mockups and corporate brand presentation.',printName2:'Rawad Al Nokhba — Corporate Stationery',printDesc2:'A coordinated identity across stationery, folders, envelopes, and bags.',printName3:'Emperor — Coffee Packaging',printDesc3:'Premium packaging design with a distinctive navy and gold palette.',printName4:'Al Ebdaa — Corporate Print Materials',printDesc4:'Company profile, stationery, brochures, and branded applications.',printName5:'Emperor — Gift Packaging',printDesc5:'Premium gift box presentation and coordinated packaging details.',printName6:'Emperor — Packaging Mockup',printDesc6:'A second product angle highlighting the packaging structure and finish.',printName7:'LAF — Branded Packaging',printDesc7:'Minimal packaging mockup with a deep green and gold visual identity.',printName8:'Rawad Al Nokhba — Brand Stationery',printDesc8:'A complete corporate identity applied to stationery and office materials.',printName9:'Al Ebdaa — Corporate Stationery',printDesc9:'A coordinated set of company stationery and branded print materials.',printName10:'Emperor — Coffee Branding',printDesc10:'Premium coffee packaging and takeaway cup design.',printName11:'Emperor — Gift Set',printDesc11:'A premium branded gift set with carefully coordinated packaging.',printName12:'Emperor — Coffee Bag Collection',printDesc12:'A cohesive range of coffee bag designs in complementary colors.',
   storesEyebrow:'E-commerce design',storesTitle:'Online Stores — Salla & Zid',
   storesIntro:'I design and improve e-commerce stores through polished banners and graphics, custom CSS, clearer homepages, and a consistent visual identity. I can also review competitors and research their SEO keywords to help strengthen your store’s search visibility and shopping experience.',
+  storeImagesTitle:'Store designs',storeLinksTitle:'Store links',
   storeTag:'E-commerce Store',storeCardDesc:'Storefront design, visual merchandising, and organized product presentation.',storeVisit:'Visit Store ↗',
   storeCap1:'Graphic design & banners',storeCap1d:'Campaign visuals that fit your brand.',
   storeCap2:'CSS & store templates',storeCap2d:'Refined layouts and useful customizations.',
@@ -705,6 +637,7 @@ ar:{
   printName1:'سلاسل الوجادة — تطبيقات الهوية البصرية',printDesc1:'موك أب للمطبوعات المكتبية وعرض الهوية التجارية.',printName2:'رواد النخبة — مطبوعات الشركات',printDesc2:'هوية متناسقة على الأوراق الرسمية والملفات والمظاريف والحقائب.',printName3:'إمبراطور — عبوات القهوة',printDesc3:'تصميم عبوات فاخرة بألوان كحلي وذهبي مميزة.',printName4:'الإبداع — مطبوعات الشركات',printDesc4:'ملف تعريفي ومطبوعات مكتبية وبروشورات وتطبيقات للهوية.',printName5:'إمبراطور — عبوات الهدايا',printDesc5:'عرض فاخر لصندوق الهدايا وتفاصيل تغليف متناسقة.',printName6:'إمبراطور — موك أب للتغليف',printDesc6:'زاوية إضافية للمنتج تُبرز شكل العبوة وتشطيبها.',printName7:'لاف — عبوات تحمل الهوية التجارية',printDesc7:'تصميم تغليف بسيط بهوية خضراء داكنة ولمسات ذهبية.',printName8:'رواد النخبة — المطبوعات والهوية',printDesc8:'تطبيق الهوية التجارية على المطبوعات والأدوات المكتبية.',printName9:'الإبداع — المطبوعات المؤسسية',printDesc9:'مجموعة متناسقة من المطبوعات الرسمية ومواد الهوية التجارية.',printName10:'إمبراطور — هوية القهوة',printDesc10:'تصميم عبوات قهوة مميزة وأكواب تحمل العلامة التجارية.',printName11:'إمبراطور — مجموعة هدايا',printDesc11:'مجموعة هدايا فاخرة بتصميم متناسق يحمل هوية العلامة التجارية.',printName12:'إمبراطور — مجموعة عبوات القهوة',printDesc12:'مجموعة متكاملة من عبوات القهوة بألوان وتصميمات متناسقة.',
   storesEyebrow:'تصميم المتاجر الإلكترونية',storesTitle:'تصميم متاجر سلة وزد',
   storesIntro:'أصمم المتاجر الإلكترونية وأطوّر واجهاتها من خلال بانرات وتصميمات جرافيك احترافية، وتعديلات CSS، وتنظيم الصفحة الرئيسية، وتوحيد الهوية البصرية. كما يمكنني دراسة المتاجر المنافسة وتحليل كلمات SEO الخاصة بها للاستفادة من فرص البحث وتحسين تجربة التسوق.',
+  storeImagesTitle:'صور المتاجر',storeLinksTitle:'روابط المتاجر',
   storeTag:'متجر إلكتروني',storeCardDesc:'تصميم واجهة المتجر وتنظيم المنتجات وعرضها بشكل احترافي.',storeVisit:'زيارة المتجر ↗',
   storeCap1:'تصميم الجرافيك والبانرات',storeCap1d:'تصميمات تسويقية متوافقة مع هوية المتجر.',
   storeCap2:'برمجة CSS والقوالب',storeCap2d:'تنسيق الواجهة وتخصيص تفاصيل التصميم.',
